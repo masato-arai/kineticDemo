@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+} /* to remove the top and left whitespace */
+
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0, 0;
+    margin: 0 0;
+    overflow: hidden;
+} /* just to be sure these are full screen*/
+
+canvas {
+    display: block;
+} /* To remove the scrollbars */
+
+#canvas {
+    width: 50%;
+    height: 50vh;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+}
+
+.logo {
+    background: url(../images/logo.png) no-repeat center center;
+    background-size: 80%;
+    width: 360px;
+    height: 230px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin: -115px 0 0 -180px;
+    z-index: 100000;
+}
+
+/*
+.logo {
+    background: url(../images/colourPalette.png) no-repeat center center;
+    width: 565px;
+    height: 589px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin: -282px 0 0 -295px;
+    z-index: 100000;
+}
+*/
+
+
+.content {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/01.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.next-arrow, .prev-arrow {
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    left: 0;
+    width: 60px;
+    height: 76px;
+    margin-top: -38px;
+    background: #000;
+    background-repeat: no-repeat;
+    background-size: 60px 76px;
+    background-position: 50%;
+    background-image: url(../images/prev.png);
+    cursor: pointer;
+}
+
+.prev-arrow {
+    left: 0;
+    right: auto;
+}
+
+.next-arrow {
+    background-image: url(../images/next.png);
+    right: 0;
+    left: auto;
+}
+
+canvas, div {
+    padding: 0 0;
+    margin: 0 0;
+}
+#myCanvas {
+    margin: 0 0;
+    z-index: -1;
+}
